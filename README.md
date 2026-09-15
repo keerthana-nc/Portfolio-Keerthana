@@ -20,23 +20,3 @@ hosted on GitHub Pages.
 3. Source: **Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
 4. Live in about a minute at `https://<username>.github.io/portfolio/`.
 
-Every push to `main` redeploys.
-
-## Before going live
-
-Replace these placeholders in `index.html`:
-
-- `YOUR-EMAIL@example.com` (appears once, in the contact section)
-- `YOUR-LINKEDIN` (appears twice)
-- Add `assets/Keerthana_Resume.pdf`
-- Point each `Repository` link at the actual repo instead of the profile
-
-## Editing later
-
-Content is plain HTML. To add a job, copy an existing `<article class="entry">` block.
-To add a project, copy an `<article class="card">` block. Nothing else needs to change.
-
-## Custom domain
-
-Buy a domain, add a `CNAME` file containing just the domain, then set it under
-Settings → Pages → Custom domain and add the DNS records GitHub shows you.
