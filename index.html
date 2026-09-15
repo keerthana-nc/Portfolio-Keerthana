@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Keerthana — AI Engineer</title>
+<meta name="description" content="Keerthana Nagilli Chitti builds full-stack LLM systems, agentic AI and the data pipelines behind them. MS Applied AI, Stevens Institute of Technology. Two published papers." />
+<meta property="og:title" content="Keerthana — AI Engineer" />
+<meta property="og:description" content="Full-stack LLM systems, agentic AI, and the data pipelines behind them." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="shell">
+
+  <!-- ── identity rail ─────────────────────────────── -->
+  <header class="rail">
+    <div class="rail-inner">
+      <p class="name">Keerthana</p>
+      <p class="role">AI Engineer</p>
+      <p class="place">New York, NYC<br />Open to relocation</p>
+
+      <nav aria-label="Sections">
+        <ul class="nav">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="links">
+        <li><a href="https://github.com/keerthana-nc">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/keerthana05/">LinkedIn</a></li>
+        <li><a href="assets/Keerthana_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ── content ───────────────────────────────────── -->
+  <main id="main">
+
+    <section class="intro">
+      <h1 class="reveal">I build AI systems that hold up<br />once they leave the notebook.</h1>
+      <p class="lede reveal">MS in Applied AI from Stevens. I build full-stack LLM systems and API
+        integrations: multi-agent orchestration, structured extraction, retrieval over graph and
+        vector stores, evaluation harnesses, and production deployment on Azure and Google Cloud.
+        Two published papers. Authorized to work in the US.</p>
+
+      <dl class="proof reveal">
+        <div>
+          <dt>Retrieval accuracy on a GraphRAG pipeline in production</dt>
+          <dd>90<span>%</span></dd>
+        </div>
+        <div>
+          <dt>Faster multimodal processing in a live chatbot</dt>
+          <dd>40<span>&times;</span></dd>
+        </div>
+        <div>
+          <dt>Gain over the mathematical baseline in published RL research</dt>
+          <dd>76<span>%</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ── filter ────────────────────────────────── -->
+    <section class="filterbar" aria-label="Filter by area">
+      <div class="filtergroup">
+        <p class="filterlabel">Expertise</p>
+        <div class="chips" data-group="area">
+          <button class="chip chip-all is-on" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="chip" data-filter="llm" aria-pressed="false">LLMs &amp; RAG</button>
+          <button class="chip" data-filter="agentic" aria-pressed="false">Agentic AI</button>
+          <button class="chip" data-filter="nlp" aria-pressed="false">NLP Pipelines</button>
+          <button class="chip" data-filter="eval" aria-pressed="false">Evaluation</button>
+          <button class="chip" data-filter="rl" aria-pressed="false">Reinforcement Learning</button>
+          <button class="chip" data-filter="cv" aria-pressed="false">Computer Vision</button>
+          <button class="chip" data-filter="datapipe" aria-pressed="false">Data Pipelines</button>
+          <button class="chip" data-filter="ds" aria-pressed="false">Data Science</button>
+        </div>
+      </div>
+      <div class="filtergroup">
+        <p class="filterlabel">Cloud</p>
+        <div class="chips" data-group="cloud">
+          <button class="chip" data-filter="azure" aria-pressed="false">Azure</button>
+          <button class="chip" data-filter="gcp" aria-pressed="false">Google Cloud</button>
+          <button class="chip" data-filter="aws" aria-pressed="false">AWS</button>
+        </div>
+      </div>
+      <p class="filterstate" id="filterstate" role="status"></p>
+    </section>
+
+    <!-- ── work ──────────────────────────────────── -->
+    <section id="work" class="band">
+      <h2>Work</h2>
+
+      <article class="entry filterable" data-tags="llm nlp eval datapipe gcp">
+        <div class="meta">
+          <p class="org">NxtConnect AI</p>
+          <p class="when">Jun – Aug 2025 &middot; New York</p>
+          <p class="tags" data-tagchips="llm nlp eval datapipe gcp"></p>
+        </div>
+        <div class="body">
+          <h3>AI Intern</h3>
+          <ul class="points">
+            <li><b>Chatbot</b> Shipped full features on a conversational CRM chatbot, React and
+              TypeScript front end through to a FastAPI backend, deployed to production on Google
+              Cloud Platform.</li>
+            <li><b>RAG</b> Integrated the Claude API over REST with prompt engineering to pull
+              structured entities out of customer conversations, feeding a Neo4j GraphRAG pipeline
+              that hit 90 percent retrieval accuracy.</li>
+            <li><b>NLP pipeline</b> Built a PyTorch and HuggingFace BERT event detection model at
+              85.7 percent accuracy, turning unstructured chat into product data.</li>
+            <li><b>Evaluation</b> Built an automated evaluation pipeline, containerised in Docker,
+              scoring model output against a labelled ground truth set and flagging low confidence
+              cases for human review.</li>
+            <li><b>Data pipeline</b> Designed the ETL flow writing extracted entities into
+              PostgreSQL and Neo4j, serving real-time calendar integration under 100 ms.</li>
+            <li><b>Impact</b> Multimodal pipeline with Whisper and EasyOCR brought audio, PDFs,
+              images and video into the chat itself, 40 times faster at 90 percent video-text accuracy.</li>
+          </ul>
+          <p class="tech">Python &middot; FastAPI &middot; Claude API &middot; prompt engineering &middot; RAG &middot; GraphRAG &middot; LLM evaluation &middot; BERT &middot; PyTorch &middot; HuggingFace &middot; Whisper &middot; EasyOCR &middot; Neo4j &middot; PostgreSQL &middot; Docker &middot; React &middot; TypeScript &middot; Google Cloud Platform</p>
+        </div>
+      </article>
+
+      <article class="entry filterable" data-tags="rl agentic">
+        <div class="meta">
+          <p class="org">Stevens Institute of Technology</p>
+          <p class="when">Jan – Dec 2025 &middot; Hoboken</p>
+          <p class="tags" data-tagchips="rl agentic"></p>
+        </div>
+        <div class="body">
+          <h3>Graduate Research Assistant</h3>
+          <ul class="points">
+            <li><b>Model</b> Designed a TensorFlow multi-agent reinforcement learning system
+              (MADDPG) for uplink power allocation, one actor network per agent against a shared
+              centralised critic.</li>
+            <li><b>Reward engineering</b> Custom multi-objective reward balancing secrecy rate,
+              per-user constraints and power fairness under adversarial, non-stationary conditions.</li>
+            <li><b>Impact</b> Improved the target objective 76 percent over the mathematical
+              baseline and beat Q-learning by 21.7 percent, converging at 300 episodes. Published
+              at ICCIT 2025.</li>
+          </ul>
+          <p class="tech">TensorFlow &middot; MADDPG &middot; DDPG &middot; actor-critic &middot; multi-agent RL &middot; reward engineering &middot; NumPy</p>
+        </div>
+      </article>
+
+      <article class="entry filterable" data-tags="datapipe ds">
+        <div class="meta">
+          <p class="org">Shadowfax</p>
+          <p class="when">Jan – Apr 2024 &middot; Bengaluru</p>
+          <p class="tags" data-tagchips="datapipe ds"></p>
+        </div>
+        <div class="body">
+          <h3>Data Analyst Intern</h3>
+          <ul class="points">
+            <li><b>Data pipelines</b> Streamlined ETL in SQL to extract, clean and process data from
+              multiple sources into one reporting layer.</li>
+            <li><b>Dashboards</b> Real-time performance visualisation across 1,100 plus hubs,
+              giving ops a live read on capacity against shipments.</li>
+            <li><b>Reporting</b> Automated weekly reporting over 580k plus member engagement records
+              using Python, Pandas and the Google Sheets API.</li>
+            <li><b>Impact</b> Cut manual reporting effort substantially, and the data science team
+              and the CEO used the output directly to make operational calls.</li>
+          </ul>
+          <p class="tech">SQL &middot; Python &middot; Pandas &middot; NumPy &middot; Google Sheets API &middot; ETL &middot; Zoho &middot; dashboarding</p>
+        </div>
+      </article>
+
+      <article class="entry filterable" data-tags="ds datapipe">
+        <div class="meta">
+          <p class="org">Nokia Bell Labs</p>
+          <p class="when">Aug 2023 – Jan 2024 &middot; Bengaluru</p>
+          <p class="tags" data-tagchips="ds datapipe"></p>
+        </div>
+        <div class="body">
+          <h3>Research Assistant</h3>
+          <ul class="points">
+            <li><b>Problem</b> Cell problem prediction inside self-organising networks: catch a
+              failing handover from time series conditions before it happens, so the network can
+              act first.</li>
+            <li><b>Data pipeline</b> Owned data generation end to end, simulating a hexagonal cell
+              topology in NetworkX to produce a 130k plus record network dataset.</li>
+            <li><b>Analysis</b> Time series analysis with time encoding and F-score hypothesis
+              testing, plus feature engineering and Matplotlib visualisation to surface
+              connectivity trends.</li>
+            <li><b>Impact</b> Benchmarked XGBoost and Random Forest against Graph Neural Networks
+              and landed a 25 percent improvement in handover success prediction. Results went to
+              the team working on handover reliability.</li>
+          </ul>
+          <p class="tech">Graph Neural Networks &middot; XGBoost &middot; Random Forest &middot; scikit-learn &middot; NetworkX &middot; time series analysis &middot; hypothesis testing &middot; Matplotlib</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ── projects ──────────────────────────────── -->
+    <section id="projects" class="band">
+      <h2>Projects</h2>
+
+      <div class="grid">
+
+        <article class="card filterable" data-tags="agentic llm eval azure">
+          <p class="tags" data-tagchips="agentic llm eval azure"></p>
+          <h3>Multi-agent travel planner</h3>
+          <p class="when">2026 &middot; current</p>
+          <p>A travel planning system built as a graph of specialised agents that research, plan and
+            cost a trip, calling external tools and handing work between each other. Deployed on
+            Azure with evaluation and tracing on every run.</p>
+          <p class="impact"><b>Impact</b> Turns a one-line trip request into a costed, day-by-day
+            plan, with each agent's output checked before it is handed to the next so a bad search
+            result does not silently end up in the itinerary.</p>
+          <p class="tech"><b>Stack</b> LangGraph &middot; MCP &middot; Azure &middot; evaluation harness &middot; Python</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc/travel-agent-azure">Repository</a> <span class="wip">In progress</span></p>
+        </article>
+
+        <article class="card filterable" data-tags="agentic llm cv">
+          <p class="tags" data-tagchips="agentic llm cv"></p>
+          <h3>Multi-agent research system</h3>
+          <p class="when">Jan – May 2026</p>
+          <p>Four specialised LangGraph agents, supervisor, researcher, analyst and writer, with MCP
+            tool calling out to Tavily, turning a plain user query into a finished research report.</p>
+          <p class="impact"><b>Impact</b> A CLIP and FAISS retrieval layer lets GPT-4V answer from
+            the figure inside a PDF, not just the paragraph around it, automating report generation
+            end to end.</p>
+          <p class="tech"><b>Stack</b> LangGraph &middot; MCP (Tavily) &middot; GPT-4V &middot; CLIP &middot; FAISS &middot; multimodal RAG &middot; Python</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc/LangGraph-AI">Repository</a></p>
+        </article>
+
+        <article class="card filterable" data-tags="llm cv eval azure">
+          <p class="tags" data-tagchips="llm cv eval azure"></p>
+          <h3>Audible Frames on Azure</h3>
+          <p class="when">May – Jun 2026</p>
+          <p>Assistive technology that describes a photograph out loud, built as an image-to-audio
+            pipeline across Azure AI Vision, the Azure OpenAI Responses API and Azure Speech, with
+            Content Safety in line and CI/CD through GitHub Actions.</p>
+          <p class="impact"><b>Impact</b> Caption quality up 38 percent through A/B testing, with
+            Application Insights dashboards monitoring the pipeline in production.</p>
+          <p class="tech"><b>Stack</b> Azure AI Vision &middot; Azure OpenAI &middot; Azure AI Speech &middot; Content Safety &middot; A/B testing &middot; FastAPI &middot; Docker &middot; GitHub Actions CI/CD</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc/Audible-frames-Azure">Repository</a></p>
+        </article>
+
+        <article class="card filterable" data-tags="datapipe">
+          <p class="tags" data-tagchips="datapipe"></p>
+          <h3>Banking data infrastructure</h3>
+          <p class="when">Oct – Nov 2025</p>
+          <p>Change data capture streaming transactions out of PostgreSQL through Debezium and Kafka
+            into MinIO, then a Snowflake warehouse modelled in dbt and orchestrated by Airflow, with
+            CI/CD on every commit.</p>
+          <p class="impact"><b>Impact</b> 824 messages a minute at 64 ms latency, 283 MB an hour,
+            feeding three staging models, two SCD Type-2 dimensions and a fact table.</p>
+          <p class="tech"><b>Stack</b> PostgreSQL &middot; Debezium &middot; Kafka &middot; MinIO &middot; Snowflake &middot; dbt &middot; Airflow &middot; Docker &middot; Python &middot; CI/CD</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc/DataEngineer-Project-BankDatastack">Repository</a></p>
+        </article>
+
+        <article class="card filterable" data-tags="llm nlp">
+          <p class="tags" data-tagchips="llm nlp"></p>
+          <h3>LexDebate AI</h3>
+          <p class="when">Jan – May 2025</p>
+          <p>A legal chatbot built solo on Flan-T5 with a retrieval pipeline, generating legal
+            arguments and answering questions with the case law actually in context.</p>
+          <p class="impact"><b>Impact</b> 603 cases and 1,200 HTML files scraped and structured into
+            JSON with sentence-transformer embeddings, so retrieval matches on meaning rather than
+            keywords.</p>
+          <p class="tech"><b>Stack</b> Flan-T5 &middot; RAG &middot; Sentence Transformers &middot; cosine similarity &middot; PyTorch &middot; SpaCy &middot; NLTK &middot; BeautifulSoup &middot; Flask</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc/LexDebate_AI">Repository</a></p>
+        </article>
+
+        <article class="card filterable" data-tags="datapipe aws">
+          <p class="tags" data-tagchips="datapipe aws"></p>
+          <h3>Weather data ETL pipeline</h3>
+          <p class="when">Aug – Sep 2025</p>
+          <p>Airflow DAGs pulling live readings from the Open-Meteo API, transforming them and
+            loading into a containerised PostgreSQL database, orchestrated daily on Astro Cloud
+            over AWS.</p>
+          <p class="impact"><b>Impact</b> Seven plus metrics landed daily at a 100 percent task
+            success rate, with custom HTTP and PostgreSQL hooks replacing manual collection entirely.</p>
+          <p class="tech"><b>Stack</b> Apache Airflow &middot; PostgreSQL &middot; Docker &middot; AWS &middot; Astro CLI &middot; Python &middot; REST APIs</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc/Airflow-Apache-ETL-Project">Repository</a></p>
+        </article>
+
+
+        <article class="card filterable" data-tags="cv ds">
+          <p class="tags" data-tagchips="cv ds"></p>
+          <h3>Vision Transformer anomaly detection</h3>
+          <p class="when">Sep – Dec 2024</p>
+          <p>Large-scale object recognition on a 1.37 million image dataset, implementing a Vision
+            Transformer in PyTorch for anomaly detection and feature learning with augmentation
+            across the set.</p>
+          <p class="impact"><b>Impact</b> Reworking the backbone from ResNet-3D to ResNet-18 gave a
+            34 percent accuracy improvement and 0.80 micro-ROC AUC.</p>
+          <p class="tech"><b>Stack</b> PyTorch &middot; Vision Transformers &middot; ResNet &middot; OpenCV &middot; PIL &middot; data augmentation</p>
+          <p class="cardlink"><a href="https://github.com/keerthana-nc">Repository</a></p>
+        </article>
+
+
+
+      </div>
+      <p class="empty" id="empty" hidden>Nothing tagged that yet. <button class="linky" data-filter="all">Show everything</button></p>
+    </section>
+
+    <!-- ── research ──────────────────────────────── -->
+    <section id="research" class="band">
+      <h2>Research</h2>
+
+      <article class="pub filterable" data-tags="rl agentic">
+        <p class="tags" data-tagchips="rl agentic"></p>
+        <h3>MADDPG-Driven Uplink Secrecy Optimization for Multi-User MIMO-NOMA Networks</h3>
+        <p class="venue">ICCIT 2025 &middot; first author</p>
+        <p>Multi-agent deep deterministic policy gradients for physical layer secrecy in uplink
+          MIMO-NOMA networks, with centralised training and decentralised execution, benchmarked on
+          Q-learning, GSVD and fixed power allocation. Improved the target objective 76 percent over
+          the mathematical baseline and beat Q-learning by 21.7 percent.
+          <span class="award">Second Prize, Stevens Institute of Technology</span></p>
+        <p class="tech"><b>Stack</b> TensorFlow &middot; MADDPG &middot; DDPG &middot; Q-learning &middot; multi-agent RL &middot; reward engineering</p>
+        <p class="cardlink"><a href="https://github.com/keerthana-nc/DeepDeterministicPolicyGradient-model---Reinforcement-learning">Repository</a></p>
+      </article>
+
+      <article class="pub filterable" data-tags="cv">
+        <p class="tags" data-tagchips="cv"></p>
+        <h3>Noise-Aware Dynamic Filtering for Motion Deblurring in Low-Light Images</h3>
+        <p class="venue">Stevens Institute of Technology, 2026 &middot; sole author, advised by Prof. Hong Man</p>
+        <p>In low-light blurred photos, sensor noise and real edges sit in the same frequency band, so
+          deblurring networks either smear the edges or amplify the grain. NADF is a 2K parameter
+          module that estimates a noise map and gates the high-frequency stream per pixel, taking a
+          failing baseline from 8.56 dB to 19.34 dB PSNR and 0.238 to 0.647 SSIM on held-out images.</p>
+        <p class="tech"><b>Stack</b> PyTorch &middot; MSFS-Net &middot; LOL-Blur &middot; PSNR and SSIM analysis</p>
+        <p class="cardlink"><a href="https://github.com/keerthana-nc/Motion-deblurring-Research-Project">Repository</a></p>
+      </article>
+
+      <article class="pub filterable" data-tags="rl ds">
+        <p class="tags" data-tagchips="rl ds"></p>
+        <h3>Power Load Demand Prediction using LSTM and Actor-Critic Model</h3>
+        <p class="venue">12th ICRCET &middot; selected from 269 submissions</p>
+        <p>Three stages on one problem: an LSTM forecaster over household demand, an encoder-decoder
+          extension that lifted accuracy 25 percent, and an actor-critic layer that reallocates power
+          across sectors during a deficit, over 700,800 records generated across 200 households.
+          <span class="award">Best Research Paper</span></p>
+        <p class="tech"><b>Stack</b> TensorFlow &middot; LSTM &middot; encoder-decoder &middot; actor-critic RL &middot; time series &middot; Matplotlib &middot; Seaborn</p>
+        <p class="cardlink">
+          <a href="https://github.com/keerthana-nc/Deeplearning-LSTM">LSTM</a>
+          <a href="https://github.com/keerthana-nc/Deeplearning-EncoderDecoder">Encoder-decoder</a>
+          <a href="https://github.com/keerthana-nc/Reinforcement-learning-Actorcritic">Actor-critic</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- ── stack ─────────────────────────────────── -->
+    <section id="stack" class="band">
+      <h2>Stack</h2>
+      <dl class="stack">
+        <div>
+          <dt>LLMs and NLP</dt>
+          <dd>LLMs, prompt engineering, RAG, GraphRAG, LangGraph, LangChain, MCP, Claude API, Azure OpenAI, GPT-4o and GPT-4V, Flan-T5, BERT, RoBERTa, Sentence Transformers, Whisper, SpaCy, NLTK, HuggingFace, named entity extraction</dd>
+        </div>
+        <div>
+          <dt>Evaluation</dt>
+          <dd>LLM-as-judge, ground truth scoring, A/B testing, human-in-the-loop review, guardrails and content safety, observability dashboards</dd>
+        </div>
+        <div>
+          <dt>Machine learning</dt>
+          <dd>PyTorch, TensorFlow, scikit-learn, Vision Transformers, ResNet, CLIP, LSTM, encoder-decoder, Graph Neural Networks, DDPG and MADDPG, actor-critic, XGBoost, Random Forest</dd>
+        </div>
+        <div>
+          <dt>Data</dt>
+          <dd>Kafka, Debezium, Airflow, dbt, Snowflake, PostgreSQL, Neo4j, FAISS, MinIO, Pandas, NumPy, SQL, ETL and CDC</dd>
+        </div>
+        <div>
+          <dt>Analysis</dt>
+          <dd>Power BI, Tableau, Matplotlib, Seaborn, NetworkX, time series analysis, hypothesis testing, feature engineering</dd>
+        </div>
+        <div>
+          <dt>Cloud and platform</dt>
+          <dd>Azure, Google Cloud Platform, Amazon Web Services, Docker, FastAPI, Flask, Streamlit, React, Next.js, TypeScript, Git, GitHub Actions, CI/CD</dd>
+        </div>
+        <div>
+          <dt>Languages</dt>
+          <dd>Python, SQL, C and C++, TypeScript, JavaScript, MATLAB</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ── education ─────────────────────────────── -->
+    <section class="band">
+      <h2>Education</h2>
+      <div class="stack">
+        <div>
+          <dt>Stevens Institute of Technology</dt>
+          <dd>MS, Applied Artificial Intelligence &middot; 2024 – 2026 &middot; GPA 3.78</dd>
+        </div>
+        <div>
+          <dt>PES University</dt>
+          <dd>BE, Electronics and Communication &middot; 2020 – 2024 &middot; Bengaluru</dd>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── contact ───────────────────────────────── -->
+    <section id="contact" class="band contact">
+      <h2>Contact</h2>
+      <p class="pitch">If you are hiring for AI engineering, applied research or data
+        infrastructure, I would like to talk.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:nckeerthana120@gmail.com">nckeerthana120@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/keerthana05/">linkedin.com/in/keerthana05</a></li>
+        <li><a href="https://github.com/keerthana-nc">github.com/keerthana-nc</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Built and maintained by Keerthana Nagilli Chitti. Last updated <span id="updated">2026</span>.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
