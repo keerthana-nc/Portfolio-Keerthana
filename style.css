@@ -89,7 +89,9 @@ main { padding: 3.5rem 0 5rem; min-width: 0; }
   max-width: 20ch;
 }
 
-.lede { margin: 0; max-width: var(--measure); font-size: 1.05rem; color: #2C3237; }
+.lede { max-width: var(--measure); font-size: 1.05rem; color: #2C3237; }
+.lede p { margin: 0 0 .85rem; }
+.lede p:last-child { margin-bottom: 0; }
 
 .proof {
   display: grid;
@@ -292,6 +294,7 @@ main { padding: 3.5rem 0 5rem; min-width: 0; }
 .stack > div:last-child { border-bottom: none; }
 .stack dt { font-weight: 600; font-size: .95rem; }
 .stack dd { margin: 0; color: #2C3237; font-size: .95rem; }
+.course { display: block; margin-top: .3rem; font-size: .84rem; color: var(--muted); }
 
 /* contact */
 
