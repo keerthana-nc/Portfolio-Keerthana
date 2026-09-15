@@ -13,6 +13,13 @@ const LABELS = {
   aws: "AWS",
 };
 
+// a broad tag also shows everything under it
+const INCLUDES = {
+  llm: ["llm", "agentic", "nlp", "eval"],
+  ds: ["ds", "datapipe"],
+};
+const expand = (key) => INCLUDES[key] || [key];
+
 const items = [...document.querySelectorAll(".filterable")];
 const filterButtons = [...document.querySelectorAll(".filterbar .chip")];
 const stateLine = document.getElementById("filterstate");
@@ -37,7 +44,9 @@ filterButtons.forEach((btn) => {
   const n =
     key === "all"
       ? items.length
-      : items.filter((el) => el.dataset.tags.split(" ").includes(key)).length;
+      : items.filter((el) =>
+          expand(key).some((k) => el.dataset.tags.split(" ").includes(k))
+        ).length;
   const span = document.createElement("span");
   span.className = "count";
   span.textContent = n;
@@ -49,7 +58,9 @@ function apply(key, push = true) {
   if (!LABELS[key]) key = "all";
 
   items.forEach((el) => {
-    el.hidden = key !== "all" && !el.dataset.tags.split(" ").includes(key);
+    el.hidden =
+      key !== "all" &&
+      !expand(key).some((k) => el.dataset.tags.split(" ").includes(k));
   });
 
   filterButtons.forEach((b) => {
@@ -59,8 +70,14 @@ function apply(key, push = true) {
   });
 
   const shown = items.filter((el) => !el.hidden).length;
+  const rolled = expand(key)
+    .filter((k) => k !== key)
+    .map((k) => LABELS[k]);
   stateLine.textContent =
-    key === "all" ? "" : `Showing ${shown} ${shown === 1 ? "item" : "items"} in ${LABELS[key]}.`;
+    key === "all"
+      ? ""
+      : `Showing ${shown} ${shown === 1 ? "item" : "items"} in ${LABELS[key]}` +
+        (rolled.length ? `, including ${rolled.join(", ")}.` : ".");
 
   const visibleCards = [...document.querySelectorAll(".card")].filter((c) => !c.hidden);
   if (emptyNote) emptyNote.hidden = visibleCards.length > 0;
